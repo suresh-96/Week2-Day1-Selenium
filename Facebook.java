@@ -24,21 +24,19 @@ public class Facebook
 		 driver.findElement(By.name("reg_email__")).sendKeys("sureshbmpg@gmail.com");
 		 driver.findElement(By.name("reg_email_confirmation__")).sendKeys("sureshbmpg@gmail.com");
 		 driver.findElement(By.id("password_step_input")).sendKeys("sureshkrishnan");
-		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		 WebElement drop1 =driver.findElement(By.id("day"));
-		 Select drpdwn1 =new Select(drop1);
-		 drpdwn1.selectByVisibleText("27");
+		  WebElement drop5 =driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/div[2]/div/div/div[1]/form/div[1]/div[5]/div[2]/span/span/select[1]"));
+		 Select drpdwn5 =new Select(drop5);
+		 drpdwn5.selectByVisibleText("27");
 		 WebElement drop2 =driver.findElement(By.id("month"));
 		 Select drpdwn2 =new Select(drop2);
-		 drpdwn1.selectByIndex(2);
+		 drpdwn2.selectByIndex(2);
 		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		 WebElement drop3 =driver.findElement(By.id("year"));
 		 Select drpdwn3 =new Select(drop3);
-		 drpdwn1.selectByVisibleText("1995");
-		 WebElement radio1 =driver.findElement(By.xpath("//*[@id=\"u_q_o_Bc\"]/span[2]/label"));
+		 drpdwn3.selectByVisibleText("1995");
+		 WebElement radio1 =driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/div[2]/div/div/div[1]/form/div[1]/div[7]/span/span[2]/label"));
 		 radio1.click();
 		 driver.findElement(By.name("websubmit")).click();
-			
 	}
 
 }
