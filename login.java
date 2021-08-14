@@ -41,7 +41,7 @@ public class login
 		 driver.findElement(By.id("createLeadForm_lastNameLocal")).sendKeys("BALA");
 		 driver.findElement(By.id("createLeadForm_personalTitle")).sendKeys("Mr");
 		 
-		 driver.findElement(By.id("createLeadForm_birthDate")).sendKeys("27/01/1995");
+		 
 		 driver.findElement(By.id("createLeadForm_annualRevenue")).sendKeys("200000");
 		 driver.findElement(By.id("createLeadForm_departmentName")).sendKeys("Quality");
 		 WebElement drop3 =driver.findElement(By.id("createLeadForm_industryEnumId"));
